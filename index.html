@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="assets/css/styles.css" />
+      <title>Decodificador</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <h1><img src="assets/img/Logo.svg" alt="Logo da alura" /></h1>
+            <div class="accessibility">
+               <div class="accessibility__border">
+                  <input type="radio" name="language" id="pt" value="portuguese" checked/>
+                  <label for="pt">PT</label>
+                  <input type="radio" name="language" id="en" value="english"/>
+                  <label for="en">EN</label>
+               </div>
+            </div>
+         </header>
+         <section class="text-input">
+            <textarea placeholder="Digite o seu texto" id="input"></textarea>
+            <article class="text-input__box-buttons">
+               <p class="text-input__subtitle">
+                  <span><img src="assets/img/exclamation.png" /></span><span id="span">Apenas
+                     letras minúsculas e sem acento</span>
+               </p>
+               <div class="text-input__buttons">
+                  <button id="encrypt">Criptografar</button>
+                  <button id="decrypt">Descriptografar</button>
+               </div>
+            </article>
+         </section>
+         <section class="text-output">
+            <img src="assets/img/high-quality.svg" alt="Sem texto codificado" class="text-output__img"/>
+            <div class="text-output__nocoding">
+               <p id="text-output__1">Nenhuma mensagem encontrada</p>
+               <p id="text-output__2">
+                  Digite um texto que você deseja criptografar ou
+                  descriptografar
+               </p>
+            </div>
+            <div class="text-output__encoded-text">
+               <textarea id="output">Texto de exemplo Texto de exemplo Texto de exemplo Texto de exemploTexto de exemplo Texto de exemplo Texto de exemplo Texto de exemplo Texto de exemploTexto de exemplo Texto de exemplo Texto de exemplo Texto de exemplo Texto de exemploTexto de exemplo Texto de exemplo Texto de exemplo Texto de exemplo Texto de exemploTexto de exemplo Texto de exemplo Texto de exemplo Texto de exemplo Texto de exemploTexto de exemplo Texto de exemplo Texto de exemplo Texto de exemplo Texto de exemploTexto de exemplo Texto de exemplo Texto de exemplo</textarea>
+               <button id="copy">Copiar</button>
+            </div>
+         </section>
+      </div>
+
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
